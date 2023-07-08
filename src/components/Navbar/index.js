@@ -13,7 +13,7 @@ const Navbar = () => (
         toggleTheme()
       }
 
-      const themeImageUrl = isDarkTheme
+      const themeImageURL = isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/light-theme-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/dark-theme-img.png'
 
@@ -50,12 +50,12 @@ const Navbar = () => (
               </li>
             </ul>
             <button
-              data-textid="theme"
+              data-testid="theme"
               className="theme-button"
               type="button"
               onClick={onToggleTheme}
             >
-              <img className="theme-image" src={themeImageUrl} alt="theme" />
+              <img className="theme-image" src={themeImageURL} alt="theme" />
             </button>
           </div>
         </div>
